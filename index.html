@@ -15,11 +15,15 @@
           <i class="fa-brands fa-instagram fa-xl"></i>
           Instagram
         </a>
-        <form class="d-flex">
-                <!-- Button trigger modal -->
-                <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-                  Create new post
-          </button>
+
+        <form class="d-flex row justify-content-end">
+          <!-- Button trigger modal -->
+          <div>
+            <button type="button" class="btn btn-success d-flex" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+              Create new post
+            </button>
+          </div>
+
 
           <!-- Modal -->
           <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
@@ -30,7 +34,7 @@
                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                  <form>
+                  <form class="d-flex">
                     <div class="mb-3">
                       <label for="message-text" class="col-form-label">Caption:</label>
                       <textarea class="form-control" id="message-text" placeholder="Add the caption of your post here"></textarea>
@@ -79,10 +83,59 @@
     </ul>
     <div class="tab-content" id="myTabContent">
       <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-        Grid
+        <div class="row">
+            <div class="col-4 d-flex">
+              <img src="images/sun-11582_640.jpg" class="img-thumbnail img-fluid" alt="sun-11582_640">
+            </div>
+            <div class="col-4 d-flex">
+              <img src="images/mercury-11591_640.png" class="img-thumbnail img-fluid" alt="mercury-11591_640">
+            </div>
+            <div class="col-4 d-flex">
+              <img src="images/venus-11022_640.jpg" class="img-thumbnail img-fluid" alt="venus-11022_640">
+            </div>
+        </div>
+        <div class="row">
+          <div class="col-4 d-flex">
+            <img src="images/earth-11009_640.jpg" class="img-thumbnail img-fluid" alt="earth-11009_640">
+          </div>
+          <div class="col-4 d-flex">
+            <img src="images/mars-11012_1280.jpg" class="img-thumbnail img-fluid" alt="mars-11012_1280">
+          </div>
+          <div class="col-4 d-flex">
+            <img src="images/jupiter-6938302_1280.jpg" class="img-thumbnail img-fluid" alt="jupiter-6938302_1280">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-4 d-flex">
+            <img src="images/saturn-11622_640.jpg" class="img-thumbnail img-fluid" alt="saturn-11622_640">
+          </div>
+          <div class="col-4 d-flex">
+            <img src="images/uranus-11625_1280.jpg" class="img-thumbnail img-fluid" alt="uranus-11625_1280">
+          </div>
+          <div class="col-4 d-flex">
+            <img src="images/neptune-67537_1280.jpg" class="img-thumbnail img-fluid" alt="neptune-67537_1280">
+          </div>
+        </div>
       </div>
-      <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-        Cards
+      <div class="tab-pane fade show active" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+          <div class="row col-12">
+            <div class="col-6 offset-3">
+              <div class="card">
+                <div class="card-body">
+                  <div class="row col-12">
+                    <h5 class="col-10 card-title">The sun, our star!</h5>
+                    <p class="col-2">01/09</p>
+                  </div>
+                  <img src="images/sun-11582_640.jpg" class="card-img" alt="sun-11582_640">
+                  <b>6.000 likes</b>
+                  <p class="card-text">The sun is our star, is located in the center of our solar sistem. Every planet in our solar sistem travels around the sun in the following order.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        
+
       </div>
     </div>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
