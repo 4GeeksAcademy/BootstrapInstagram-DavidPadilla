@@ -9,66 +9,63 @@
     <title>Document</title>
   </head>
   <body>
-    <nav class="navbar navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">
           <i class="fa-brands fa-instagram fa-xl"></i>
           Instagram
         </a>
+        <div class="d-flex" id="navbarSupportedContent">
 
-        <form class="d-flex row justify-content-end">
-          <!-- Button trigger modal -->
-          <div>
+          <form class="d-flex end">
             <button type="button" class="btn btn-success d-flex" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
               Create new post
             </button>
-          </div>
-
-
-          <!-- Modal -->
-          <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-            <div class="modal-dialog">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title" id="staticBackdropLabel">Create a new post</h5>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                  <form class="d-flex">
-                    <div class="mb-3">
-                      <label for="message-text" class="col-form-label">Caption:</label>
-                      <textarea class="form-control" id="message-text" placeholder="Add the caption of your post here"></textarea>
-                    </div>
-                  </form>
-                  <button type="button" class="btn btn-light">
-                    <i class="fa-solid fa-camera"></i>
-                  </button>
-                  <button type="button" class="btn btn-light">
-                    <i class="fa-solid fa-location-dot"></i>
-                  </button>
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                  <button type="button" class="btn btn-success">Publish</button>
+            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Create a new post</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <form class="d-flex">
+                      <div class="mb-3">
+                        <label for="message-text" class="col-form-label">Caption:</label>
+                        <textarea class="form-control" id="message-text" placeholder="Add the caption of your post here"></textarea>
+                      </div>
+                    </form>
+                    <button type="button" class="btn btn-light">
+                      <i class="fa-solid fa-camera"></i>
+                    </button>
+                    <button type="button" class="btn btn-light">
+                      <i class="fa-solid fa-location-dot"></i>
+                    </button>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-success">Publish</button>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="btn-group end margin">
-            <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-              <i class="fa-solid fa-gear fa-xl"></i>
-            </button>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Profile</a></li>
-              <li><a class="dropdown-item" href="#">Accesibility</a></li>
-              <li><a class="dropdown-item" href="#">Privacy and data</a></li>
-              <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item text-danger" href="#">Log out</a></li>
-            </ul>
-          </div>
-        </form>
+            <div class="btn-group d-flex mx-2">
+              <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="fa-solid fa-gear fa-xl"></i>
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Profile</a></li>
+                <li><a class="dropdown-item" href="#">Accesibility</a></li>
+                <li><a class="dropdown-item" href="#">Privacy and data</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item text-danger" href="#">Log out</a></li>
+              </ul>
+            </div>
+          </form>
+        </div>
       </div>
     </nav>
+
     <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
       <li class="nav-item" role="presentation">
         <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">
@@ -124,7 +121,7 @@
                 <div class="card-body">
                   <div class="row col-12">
                     <h5 class="col-10 card-title">The sun, our star!</h5>
-                    <p class="col-2">01/09</p>
+                    <p class="col-2 d-flex">01/09</p>
                   </div>
                   <img src="images/sun-11582_640.jpg" class="card-img" alt="sun-11582_640">
                   <b>6.000 likes</b>
@@ -133,9 +130,126 @@
               </div>
             </div>
           </div>
-
-        
-
+          <div class="row col-12">
+            <div class="col-6 offset-3">
+              <div class="card">
+                <div class="card-body">
+                  <div class="row col-12">
+                    <h5 class="col-10 card-title">Mercury, the closest planet to the sun.</h5>
+                    <p class="col-2 d-flex">02/09</p>
+                  </div>
+                  <img src="images/mercury-11591_640.png" class="card-img" alt="mercury-11591_640">
+                  <b>5.200 likes</b>
+                  <p class="card-text">Mercury is also the smallest planet in the solar sistem. It has no atmosphere because of it's temperature. One day in Mercury lasts 176 earth days, and one year lasts 88 days.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row col-12">
+            <div class="col-6 offset-3">
+              <div class="card">
+                <div class="card-body">
+                  <div class="row col-12">
+                    <h5 class="col-10 card-title">Venus, the weird one.</h5>
+                    <p class="col-2 d-flex">03/09</p>
+                  </div>
+                  <img src="images/venus-11022_640.jpg" class="card-img" alt="venus-11022_640">
+                  <b>7.500 likes</b>
+                  <p class="card-text">Venus spin in the oposite direction, it's the only planet in our solar sistem that does that. It is really hot because of its clouds of sulfuric acid. </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row col-12">
+            <div class="col-6 offset-3">
+              <div class="card">
+                <div class="card-body">
+                  <div class="row col-12">
+                    <h5 class="col-10 card-title">The earth, our home!</h5>
+                    <p class="col-2 d-flex">04/09</p>
+                  </div>
+                  <img src="images/earth-11009_640.jpg" class="card-img" alt="earth-11009_640">
+                  <b>15.700 likes</b>
+                  <p class="card-text">The earth is the planet where we live. We have to take care of it because we can't live in other planet.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row col-12">
+            <div class="col-6 offset-3">
+              <div class="card">
+                <div class="card-body">
+                  <div class="row col-12">
+                    <h5 class="col-10 card-title">Mars, the red one.</h5>
+                    <p class="col-2 d-flex">05/09</p>
+                  </div>
+                  <img src="images/mars-11012_1280.jpg" class="card-img" alt="mars-11012_1280">
+                  <b>13.700 likes</b>
+                  <p class="card-text">Mars is the planet that we know more about. There is ice in the poles, and a huge presence of wind and water erosion very old. It has some of the biggest volcanoes in the solar sistem.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row col-12">
+            <div class="col-6 offset-3">
+              <div class="card">
+                <div class="card-body">
+                  <div class="row col-12">
+                    <h5 class="col-10 card-title">Jupiter, the biggest planet!</h5>
+                    <p class="col-2 d-flex">06/09</p>
+                  </div>
+                  <img src="images/jupiter-6938302_1280.jpg" class="card-img" alt="jupiter-6938302_1280">
+                  <b>13.800 likes</b>
+                  <p class="card-text">Jupiter is also the hottest one. It's mainly made of a mix of gases. It has 70 moons, some of them very interesting for us.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row col-12">
+            <div class="col-6 offset-3">
+              <div class="card">
+                <div class="card-body">
+                  <div class="row col-12">
+                    <h5 class="col-10 card-title">Saturn, the ringed planet</h5>
+                    <p class="col-2 d-flex">07/09</p>
+                  </div>
+                  <img src="images/saturn-11622_640.jpg" class="card-img" alt="saturn-11622_640">
+                  <b>14.900 likes</b>
+                  <p class="card-text">Saturn is algo made of gas and very hot. It has more than 70 moons and thousands of rings made of ice.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row col-12">
+            <div class="col-6 offset-3">
+              <div class="card">
+                <div class="card-body">
+                  <div class="row col-12">
+                    <h5 class="col-10 card-title">Uranus, the leaning one.</h5>
+                    <p class="col-2 d-flex">08/09</p>
+                  </div>
+                  <img src="images/uranus-11625_1280.jpg" class="card-img" alt="uranus-11625_1280">
+                  <b>17.500 likes</b>
+                  <p class="card-text">Uranus spins in a weird angle. It's made of gas and has a metalic core. It has 27 moons.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row col-12">
+            <div class="col-6 offset-3">
+              <div class="card">
+                <div class="card-body">
+                  <div class="row col-12">
+                    <h5 class="col-10 card-title">Neptune, the last one!</h5>
+                    <p class="col-2 d-flex">09/09</p>
+                  </div>
+                  <img src="images/neptune-67537_1280.jpg" class="card-img" alt="neptune-67537_1280">
+                  <b>16.300 likes</b>
+                  <p class="card-text">Neptune is the farthest planet from the sun. It's made of a mix of gases, liquids and rocks. It has 14 moons.</p>
+                </div>
+              </div>
+            </div>
+          </div>
       </div>
     </div>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
